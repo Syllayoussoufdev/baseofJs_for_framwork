@@ -11,6 +11,24 @@
     <h1>
         Hello, World!
     </h1>
+
+    <h1 id="compteur">0</h1>
+<button id="plus">+</button>
+<button id="moins">-</button>
+
+<script>
+    let c = 0;
+  const affichage = document.getElementById("compteur");
+  document.getElementById("plus").addEventListener("click", () => {
+    c++;
+    affichage.textContent = c;
+  });
+  document.getElementById("moins").addEventListener("click", () => {
+    c--;
+    affichage.textContent = c;
+  });
+</script>
+
     
 </body>
 </html>
